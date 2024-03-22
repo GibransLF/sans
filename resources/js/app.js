@@ -49,6 +49,10 @@ let table = new DataTable("#example", {
         },
     ],
 });
+let akun = new DataTable("#akun", {
+    responsive: true,
+    dom: "lfrtip",
+});
 
 window.Alpine = Alpine;
 
