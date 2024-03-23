@@ -15,6 +15,9 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('orderProduk.index')" :active="request()->routeIs('orderProduk.index')">
+                        {{ __('Order Produk') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -36,6 +39,9 @@
                     <x-slot name="content">
                         <x-dropdown-link :href="route('akun.index')">
                             {{ __('Akun') }}
+                        </x-dropdown-link>
+                        <x-dropdown-link :href="route('manageProduk.index')">
+                            {{ __('Manage Produk') }}
                         </x-dropdown-link>
                         <x-dropdown-link :href="route('profile.edit')">
                             {{ __('Profile') }}
@@ -73,6 +79,9 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('orderProduk.index')" :active="request()->routeIs('orderProduk.index')">
+                {{ __('Order Produk') }}
+            </x-responsive-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->
@@ -83,6 +92,12 @@
             </div>
 
             <div class="mt-3 space-y-1">
+                <x-responsive-nav-link :href="route('akun.index')">
+                    {{ __('Akun') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('manageProduk.index')">
+                    {{ __('Manage Produk') }}
+                </x-responsive-nav-link>
                 <x-responsive-nav-link :href="route('profile.edit')">
                     {{ __('Profile') }}
                 </x-responsive-nav-link>
