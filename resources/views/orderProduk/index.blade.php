@@ -13,7 +13,7 @@
                 <!-- Tambahkan tampilan produk lainnya di sini -->
                 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img class="mx-auto rounded-t-lg" src="{{ asset('img/logo.png') }}" alt="product image" />
+                        <img class="mx-auto rounded-t-lg h-32 w-auto object-center" src="{{ asset('img/logo.png') }}" alt="product image" />
                     </a>
                     <div class="p-5">
                         <a href="#">

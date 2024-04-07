@@ -21,12 +21,12 @@
                 @csrf
                 @method('PATCH')
                     <div>
-                        <label for="password11" class="block mt-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-                        <input type="password" name="password1" id="password1" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" minlength="8" required />
+                        <label for="password11{{$user -> id}}" class="block mt-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+                        <input type="password" name="password1" id="password1{{$user -> id}}" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" minlength="8" required />
                     </div>
                     <div>
-                        <label for="password2" class="block mt-2 text-sm font-medium text-gray-900 dark:text-white">Konfirmasi Password</label>
-                        <input type="password" name="password2" id="password2" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" minlength="8" required />
+                        <label for="password2{{$user -> id}}" class="block mt-2 text-sm font-medium text-gray-900 dark:text-white">Konfirmasi Password</label>
+                        <input type="password" name="password2" id="password2{{$user -> id}}" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" minlength="8" required />
                     </div>
                     <button type="submit" class="mt-6 w-full text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900">Ubah Password</button>
                 </form>

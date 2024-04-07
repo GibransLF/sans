@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Produk;
 
 class manageProdukController extends Controller
 {
@@ -11,7 +12,9 @@ class manageProdukController extends Controller
      */
     public function index()
     {
-        return view('manageProduk.index');
+        $produks = Produk::where('hidden', 0)->get();
+
+        return view('manageProduk.index', ['produks' => $produks]);
     }
 
     /**

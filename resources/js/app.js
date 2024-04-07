@@ -19,7 +19,7 @@ import "datatables.net-buttons/js/buttons.html5.mjs";
 import "datatables.net-buttons/js/buttons.print.mjs";
 import "datatables.net-responsive-dt";
 
-let table = new DataTable("#example", {
+let table = new DataTable("#manageProduk", {
     responsive: true,
     dom: "lBfrtip",
     buttons: [
